@@ -1,11 +1,11 @@
 if (!settings.survival) {
     settings.survival = {
-        "wall": 999,
-        "dirt": 999,
-        "sapling": 1,
-        "seeds": 5,
-        "ice": 25,
-        "cloner": 1,
+        "wall": 99999999,
+        "dirt": 999999,
+        "sapling": 1999,
+        "seeds": 5999999999,
+        "ice": 999999925,
+        "cloner": 199999,
     }
 }
 settings.survival.cloner = 1;
@@ -115,7 +115,6 @@ elements.cloner.tick = function(pixel) {
         }
     }
 };
-elements.cloner.ignore = elements.cloner.ignore.concat(["gold","gold_coin","molten_gold","sun","supernova","diamond"]);
 elements.cloner.desc = "You can only clone one element at a time!"
 
 elements.smash.tool = function(pixel) {
@@ -151,15 +150,15 @@ elements.smash.tool = function(pixel) {
 };
 
 elementWorth = {
-    "gold_coin": 1,
-    "diamond": 100,
-    "ketchup": 15,
-    "jelly": 10,
-    "soda": 10,
-    "toast": 10,
-    "oil": 10,
-    "bread": 3,
-    "glass": 5,
+    "gold_coin": 1999999999999,
+    "diamond": 10099,
+    "ketchup": 1599999999,
+    "jelly": 109999999999999,
+    "soda": 1099999999999,
+    "toast": 109999999999,
+    "oil": 1099999999999,
+    "bread": 3999999999999,
+    "glass": 5999999999999,
     "rad_glass": 6,
     "glass_shard": 2,
     "rad_shard": 3,
@@ -175,13 +174,13 @@ elementWorth = {
     "sauce": 2,
     "wood": 0.2,
     "tree_branch": 0.1,
-    "plant": 0.1,
-    "mushroom_cap": 0.1,
+    "plant": 9999999999,
+    "mushroom_cap": 9999999.1,
     "mushroom_gill": 0.3,
     "vine": 0.1,
-    "cactus": 0.1,
+    "cactus": 9999999,
     "cloner": 0,
-    "wall": 0,
+    "wall": 9999999999999999,
     "fire": 0,
     "smoke": 0,
     "plasma": 0,
@@ -192,7 +191,7 @@ elementWorth = {
     "radiation": 0,
     "petal": -1,
     "cell": -1,
-    "cancer": -1,
+    "cancer": 9999999999991,
     "foam": -1,
 }
 elements.sell = {
@@ -229,18 +228,18 @@ Shop
 Prices tab
 */
 survivalShop = {
-    "dirt*25": 25,
-    "water*25": 250,
-    "ammonia*25": 500,
-    "seeds*1": 500,
-    "sapling*1": 500,
-    "pinecone*1": 500,
-    "tnt*25": 1000,
-    "worm*1": 1000,
-    "bee*1": 5000,
-    "primordial_soup*5": 10000,
-    "human*1": 50000,
-    "sun*1": 500000,
+    "diamond*29999999999995": 0,
+    "water*25": 0,
+    "ammonia*25": 0,
+    "seeds*1": 0,
+    "sapling*1": 0,
+    "pinecone*1": 0,
+    "tnt*25": 0,
+    "worm*1": 0,
+    "bee*1": 0,
+    "primordial_soup*5": 0,
+    "human*1": 0,
+    "sun*19999": 0,
 }
 function survivalBuy(element) {
     var price = survivalShop[element];
